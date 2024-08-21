@@ -1,0 +1,19 @@
+{
+  "name": "ericngigi-mainroad-v3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "tinacms": "^2.2.0"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.6.0",
+    "@types/node": "^22.4.2"
+  }
+}

@@ -1,0 +1,65 @@
+title = "Eric Ngigi"
+languageCode = "en-us"
+paginate = "10" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "" # Enable comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+[Params.author]
+  name = "Eric Ngigi"
+  bio = "Who Cares"
+  avatar = "images/profile/profile-picture.png"
+
+[Params]
+  description = "Eric" # Description of your site
+  copyright = "Eric Ngigi"
+  opengraph = true
+  schema = true
+  twitter_cards = false
+  readmore = false # Show "Read more" button in list if true
+  authorbox = true
+  pager = true
+  post_meta = ["date", "categories"] # Order of post meta information
+  mainSections = ["posts"]
+  googleFontsLink = "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" # Load Google Fonts
+  customCSS = ["css/img-gallery.css"] # Include custom CSS files
+  customJS = ["js/glightbox.js"] # Include custom JS files
+  # disableNextPrev = true
+
+[Params.logo]
+  image = "images/logo/logo_02.png"
+  title = "Eric Ngigi"
+  subtitle = "Engineered for Efficiency: Cloud Automation Expertise" # Logo subtitle
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["recent", "categories", "taglist", "social"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  categories_counter = false # Enable counter for each category in "Categories" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.style.vars]
+  highlightColor = "#228B22"
+  fontFamilyPrimary = "Roboto, Helvetica, Arial, sans-serif"
+  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+
+[Params.thumbnail]
+  visibility = ["list", "post"] # Control thumbnail visibility
+
+[Author] # Used in authorbox
+  name = "Eric Ngigi"
+  bio = "Eric, a certified AWS Solution Architect, brings 4 years of expertise in cloud and DevOps technologies. Proficient in Linux administration, his mastery lies in Terraform for Infrastructure as Code (IaC) development, enabling scalable cloud deployments. Eric shares his insights and experiences through his blog, [EricNgigi](https://ericngigi.com)."
+  avatar = "img/profile-picture.png"
+
+[Params.widgets.social]
+  cached = true # activate cache if true
+  # Enable parts of social widget
+  linkedin = "erik-ngigi"
+  github = "ErikNgigi"
+  email = "ericmosesngigi@gmail.com"
+  youtube = "UCF3GCqR1MYFdf-Jv9srtjDA"
