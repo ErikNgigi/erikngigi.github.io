@@ -1,5 +1,4 @@
-# /.github/
+/.github/
 /public/
-
 node_modules
 .env
