@@ -52,6 +52,8 @@ jobs:
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Install Yarn
         run: npm install --global yarn
+      - name: Install Yarn dependencies
+        run: yarn install
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
