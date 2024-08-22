@@ -1,4 +1,5 @@
 # /.github/
 /public/
+/static/admin/*
 node_modules
 .env
