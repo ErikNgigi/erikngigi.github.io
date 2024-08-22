@@ -51,8 +51,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      # - name: Install dependencies
-        # run: yarn install
+      - name: Install dependencies
+        run: yarn install
       # - name: Update Tina packages
         # run: yarn upgrade tinacms@latest @tinacms/cli@latest
       # - name: Update Schema
