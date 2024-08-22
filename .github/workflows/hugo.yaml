@@ -61,7 +61,7 @@ jobs:
         env:
           TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-        run: yarn build tinacms
+        run: yarn tinacms build
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
