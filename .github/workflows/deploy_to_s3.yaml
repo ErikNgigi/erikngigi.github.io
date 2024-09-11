@@ -1,0 +1,36 @@
+name: Build Hugo site
+
+on:
+  push:
+    branches:
+      - production
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.131.0"
+
+      - name: Build minified pages
+        run: hugo --gc --minify
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ secrets.AWS_REGION }}
+          role-to-assume: ${{ secrets.IAM_ROLE_ARN }}
+
+      - name: Sync public directory with S3 bucket
+        run: |
+          aws s3 sync ./public s3://${{ secrets.S3_HUGO_BUCKET }} --delete  
