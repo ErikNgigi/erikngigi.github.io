@@ -1,4 +1,4 @@
-# /.github/
+/.github/
 /public/
 /static/admin/*
 node_modules
