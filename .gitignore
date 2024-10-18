@@ -1,5 +1,6 @@
 /.github/
 /public/
 /static/admin/*
+/tina/
 node_modules
 .env
